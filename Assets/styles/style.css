@@ -1,6 +1,18 @@
+:root {
+  --past: #a8a8a8;
+  --present: #ff6961;
+  --future: #77dd77;
+  --bckgrnd: rgb(29, 29, 29);
+  --white: white;
+  --timeslot: #5b9cbd;
+  --savebtn: rgb(30, 208, 149);
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
+  background-color: var(--bckgrnd);
+  color: var(--white);
 }
 
 textarea {
@@ -12,8 +24,12 @@ textarea {
   padding: 10px;
 }
 
+p.intro {
+  border-bottom: 2px solid var(--white);
+}
+
 .description {
-  white-space: pre-wrap;
+  white-space: pre-wrap;  
 }
 
 .time-block {
@@ -21,39 +37,47 @@ textarea {
 }
 
 .row {
-  border-top: 1px solid white;
+  border-top: 2px solid white;
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  background-color: var(--timeslot);
+  color: white;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: var(--past) ;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: var(--present);
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: var(--future);
   color: white;
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border-left: 1px solid var(--white);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: var(--savebtn);
   color: white;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.5s ease-in-out;
+}
+
+#currentTime {
+  margin: 0;
 }
