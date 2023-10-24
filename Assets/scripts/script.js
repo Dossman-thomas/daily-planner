@@ -33,7 +33,7 @@ $(".saveBtn").on("click", function () {
 
 // GET local storage using a for loop and display in the textarea by targeting #hour-i .description using concatenated strings.
 
-for(let i = 9; i < 19; i++){
+for(let i = 9; i < 18; i++){
   // variable for target time block textarea element
   let storedText = $("#hour-" + i + " " + ".description");
 
@@ -45,7 +45,7 @@ for(let i = 9; i < 19; i++){
   
 
 // Code to apply the past, present, or future class to each time block by comparing the id to the current hour
-for(let i = 9; i < 19; i++){
+for(let i = 9; i < 18; i++){
 
 // target individual textareas one at a time
 let blockArea = $("#hour-" + i + " " + ".description");
