@@ -2,10 +2,6 @@
 
 A calendar application that allows users to schedule events for each hour of a typical 9-5 work day.
 
-# JavaScript Quiz
-
-A code quiz app that presents web development students with an opportunity to practice for the coding assessment portion of technical interviews they'll face during the hiring process.
-
 ## Table of Contents
 
 1. [Usage](#usage)
