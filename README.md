@@ -15,7 +15,7 @@ https://dossman-thomas.github.io/daily-planner/
 
 ## Screenshots
 
-![Scheduler-SS1](./assets/images/daily-planner-preview.png)
+![Scheduler-SS1](./Assets/images/daily-planner-preview.png)
 
 ## Badges
 
