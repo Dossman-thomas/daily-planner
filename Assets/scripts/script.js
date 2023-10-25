@@ -13,6 +13,16 @@ const displayTimeEl = $("#currentTime");
 displayDateEl.append("Date: " + currentDate);
 displayTimeEl.append("Time: " + timeEl);
 
+
+// Refreshing the page so current time render is up-to-date.
+
+function refreshPage(){
+  location.reload();
+}
+
+const refreshInterval = setInterval(refreshPage, 60000);
+
+
 // Add a listener for click events on the save button. This function saves the value of the textBlock into local storage.
 $(".saveBtn").on("click", function () {
 
@@ -70,3 +80,4 @@ let blockArea = $("#hour-" + i + " " + ".description");
 
   }
 }
+
