@@ -1,3 +1,4 @@
+/* Variables */
 :root {
   --past: #a8a8a8;
   --present: #ff6961;
@@ -7,6 +8,8 @@
   --timeslot: #5b9cbd;
   --savebtn: rgb(30, 208, 149);
 }
+
+/* Universal Selectors */
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -23,6 +26,8 @@ textarea {
   border-left: 1px solid black;
   padding: 10px;
 }
+
+/* Class Selectors */
 
 p.intro {
   border-bottom: 2px solid var(--white);
@@ -50,6 +55,16 @@ p.intro {
   align-items: center;
 }
 
+.saveBtn {
+  border-left: 1px solid var(--white);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: var(--savebtn);
+  color: white;
+}
+
+/* Dynamically created classes by JS */
+
 .past {
   background-color: var(--past) ;
   color: white;
@@ -65,18 +80,14 @@ p.intro {
   color: white;
 }
 
-.saveBtn {
-  border-left: 1px solid var(--white);
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: var(--savebtn);
-  color: white;
-}
+/* Hover Selector */
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.5s ease-in-out;
 }
+
+/* ID selectors */
 
 #currentTime {
   margin: 0;
